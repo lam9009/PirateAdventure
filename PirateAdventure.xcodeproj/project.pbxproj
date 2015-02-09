@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFAE66621A895CBB00E55749 /* PATile.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAE66611A895CBB00E55749 /* PATile.m */; };
+		DFAE66661A895F0B00E55749 /* PAFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAE66651A895F0B00E55749 /* PAFactory.m */; };
 		DFF48DC81A88A53F00F0E418 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF48DC71A88A53F00F0E418 /* main.m */; };
 		DFF48DCB1A88A53F00F0E418 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF48DCA1A88A53F00F0E418 /* AppDelegate.m */; };
 		DFF48DCE1A88A53F00F0E418 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF48DCD1A88A53F00F0E418 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DFAE66601A895CBB00E55749 /* PATile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATile.h; sourceTree = "<group>"; };
+		DFAE66611A895CBB00E55749 /* PATile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATile.m; sourceTree = "<group>"; };
+		DFAE66641A895F0B00E55749 /* PAFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFactory.h; sourceTree = "<group>"; };
+		DFAE66651A895F0B00E55749 /* PAFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFactory.m; sourceTree = "<group>"; };
 		DFF48DC21A88A53F00F0E418 /* PirateAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF48DC61A88A53F00F0E418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF48DC71A88A53F00F0E418 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFAE665F1A895BF000E55749 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE66631A895ED700E55749 /* Factory */,
+				DFAE66601A895CBB00E55749 /* PATile.h */,
+				DFAE66611A895CBB00E55749 /* PATile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DFAE66631A895ED700E55749 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DFAE66641A895F0B00E55749 /* PAFactory.h */,
+				DFAE66651A895F0B00E55749 /* PAFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
 		DFF48DB91A88A53F00F0E418 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 		DFF48DC41A88A53F00F0E418 /* PirateAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				DFAE665F1A895BF000E55749 /* Model */,
 				DFF48DC91A88A53F00F0E418 /* AppDelegate.h */,
 				DFF48DCA1A88A53F00F0E418 /* AppDelegate.m */,
 				DFF48DCC1A88A53F00F0E418 /* ViewController.h */,
@@ -220,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF48DCE1A88A53F00F0E418 /* ViewController.m in Sources */,
+				DFAE66661A895F0B00E55749 /* PAFactory.m in Sources */,
 				DFF48DCB1A88A53F00F0E418 /* AppDelegate.m in Sources */,
+				DFAE66621A895CBB00E55749 /* PATile.m in Sources */,
 				DFF48DC81A88A53F00F0E418 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +440,7 @@
 				DFF48DE71A88A53F00F0E418 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFF48DE81A88A53F00F0E418 /* Build configuration list for PBXNativeTarget "PirateAdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				DFF48DEA1A88A53F00F0E418 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
