@@ -89,6 +89,9 @@
                                         <state key="normal" title="Action">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UcQ-bz-oSh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Action" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-X9-vzb">
                                         <rect key="frame" x="502" y="8" width="58" height="23"/>
@@ -108,7 +111,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrO-dk-83r">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrO-dk-83r" userLabel="Story Contents">
                                         <rect key="frame" x="8" y="8" width="300" height="220"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -120,6 +123,9 @@
                                         <state key="normal" title="N">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="northButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cCC-v0-3uh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdD-8R-LF8">
                                         <rect key="frame" x="473" y="103" width="30" height="30"/>
@@ -127,6 +133,9 @@
                                         <state key="normal" title="E">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="eastButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zQg-8O-ynx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go6-vd-fQO">
                                         <rect key="frame" x="422" y="145" width="30" height="30"/>
@@ -134,6 +143,9 @@
                                         <state key="normal" title="S">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="southButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jZk-k0-PeO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHs-In-Id6">
                                         <rect key="frame" x="366" y="103" width="30" height="30"/>
@@ -141,6 +153,9 @@
                                         <state key="normal" title="W">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="westButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="104-gO-IV9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,6 +163,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="armorLabel" destination="ze8-5k-j4Q" id="LMY-7L-mKd"/>
+                        <outlet property="backgroundImageView" destination="qcc-2s-3uh" id="r3o-2D-rtv"/>
+                        <outlet property="damageLabel" destination="mqg-gA-E1B" id="q07-8K-hWb"/>
+                        <outlet property="healthLabel" destination="f3b-4n-Jmk" id="fyZ-we-6X1"/>
+                        <outlet property="storyLabel" destination="zrO-dk-83r" id="gLm-Pr-nlM"/>
+                        <outlet property="weaponLabel" destination="yIr-yC-SqO" id="cjZ-8h-EzS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

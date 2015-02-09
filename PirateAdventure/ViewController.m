@@ -24,4 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionButton:(UIButton *)sender {
+}
+
+- (IBAction)northButton:(UIButton *)sender {
+}
+
+- (IBAction)eastButton:(UIButton *)sender {
+}
+
+- (IBAction)southButton:(UIButton *)sender {
+}
+
+- (IBAction)westButton:(UIButton *)sender {
+}
 @end
