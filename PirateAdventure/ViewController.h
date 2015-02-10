@@ -22,5 +22,13 @@
 - (IBAction)southButton:(UIButton *)sender;
 - (IBAction)westButton:(UIButton *)sender;
 
+@property (nonatomic, readwrite) CGPoint currentPoint;
+@property (strong, nonatomic) NSArray *tiles;
+
+@property (strong, nonatomic) IBOutlet UIButton *northButton;
+@property (strong, nonatomic) IBOutlet UIButton *eastButton;
+@property (strong, nonatomic) IBOutlet UIButton *southButton;
+@property (strong, nonatomic) IBOutlet UIButton *westButton;
+
 @end
 
